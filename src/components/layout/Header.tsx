@@ -2,9 +2,11 @@ import React from 'react'
 import Logo from "../../../public/logos.png"
 import Image from "next/image"
 import Link from 'next/link'
+import Wrapper from '../shared/Wrapper'
 function Header() {
   return (
-    <header className='flex justify-between items-center  max-w-screen-xl mx-auto py-4 px-2 md:5 bg-white sticky  top-0 items-center0'>
+    <Wrapper>
+    <header className='flex justify-between   py-4   bg-white sticky top-0 items-center'>
 
       {/* LOgo */}
      
@@ -23,6 +25,7 @@ function Header() {
     </ul>
 
     </header>
+    </Wrapper>
   )
 }
 
