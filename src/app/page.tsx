@@ -8,6 +8,7 @@ export default function Page() {
    <>
    {/* Hero Section */}
      <Hero />
+     {/* Core tracks */}
    
    </>
   )
