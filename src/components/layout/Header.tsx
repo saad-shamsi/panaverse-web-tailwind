@@ -10,7 +10,7 @@ function Header() {
 
       {/* LOgo */}
      
-        <Image src={Logo} alt="" ></Image>
+        <Image src={Logo} alt="panverse" ></Image>
     {/* <h2 className='text-xl font-bold'>Panverse Dao</h2> */}
   
     {/* Navigation bar */}
