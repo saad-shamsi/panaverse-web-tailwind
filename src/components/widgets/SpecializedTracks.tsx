@@ -13,9 +13,9 @@ const SpecializedTracks = () => {
     <h2 className='text-5xl font-bold whitespace-pre-line'>Specialized Tracks:</h2>
     <p className='mt-3 text-xl text-slate-600 '>After completing the first three quarters the participants will select one or more specializations consisting of two courses each: </p>
     </div>
-    <div className='mt-10'>
+    <div className='mt-10 flex gap-x-6 gapy-y-8'>
     {/* Content left */}
-<div className=' shadow-xl rounded-xl border border-slate-300 py-8 px-8'>
+<div className=' shadow-xl flex-1  basis-8/12 rounded-xl border border-slate-300 py-8 px-8'>
     <h4 className='text-lg font-semibold text-[#00616C]'>Specialized Program</h4>
     <h3 className='text-3xl font-bold '>Web 3.0 (Blockchain) and Metaverse Specialization</h3>
     <p className='text-xl text-slate-700 mt-4'>This Web 3.0 and Metaverse specialization focuses on developing full-stack Web 3.0 and Metaverse experiences for the next generation of the internet by specializing in building worlds that merge the best of cutting-edge decentralized distributed blockchains with 3D metaverse client experiences.
@@ -34,6 +34,7 @@ const SpecializedTracks = () => {
         description={item.description}
         number={id+1}
         key={id}
+        haveBorder={false}
        
 
 
@@ -42,8 +43,22 @@ const SpecializedTracks = () => {
     }
 </div>
 </div>
+
     {/* Content Right */}
+   <div className='px-4 py-8  basis-4/12 bg-slate-100 flex-1'>
+   <div className=' flex gap-x-4 items-center'>
+    <div className='w-28 h-16 rounded bg-slate-600 cursor-pointer'></div>
+    <div>
+    
+      <h4 className='text-lg font-medium text-[#00616C]'>Specialized Program</h4>
+      <h3 className='font-semibold text-xl'>Web 3.0 (Blockchain) and Metaverse Specialization
+      </h3>
+      </div>
+      {/* underline */}
+      <div className='border-b-2'></div>
     </div>
+   </div>
+   </div>
 </Wrapper>
     </section>
   )
